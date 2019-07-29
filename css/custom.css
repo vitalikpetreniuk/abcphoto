@@ -1,0 +1,681 @@
+/*@media only screen and (max-width:1080px)*/
+/*{*/
+    /*#container {*/
+        /*padding: 0;*/
+    /*}*/
+
+    /*header*/
+    /*{*/
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+
+    /*}*/
+    /*header #logo*/
+    /*{*/
+        /*position: static;*/
+    /*}*/
+    /*header nav.infopages*/
+    /*{*/
+        /*order: 1;*/
+    /*}*/
+    /*header #searchform*/
+    /*{*/
+        /*order: 2;*/
+    /*}*/
+    /*header #cart*/
+    /*{*/
+        /*order: 3;*/
+    /*}*/
+    /*header #phones*/
+    /*{*/
+        /*order: 4;*/
+    /*}*/
+    /*header #mobile*/
+    /*{*/
+        /*order: 5;*/
+    /*}*/
+    /*header #logo*/
+    /*{*/
+        /*order: 6;*/
+    /*}*/
+    /*header #categories*/
+    /*{*/
+        /*order: 7;*/
+    /*}*/
+
+
+
+
+    /*header nav.infopages*/
+    /*{*/
+        /*width: 70px;*/
+        /*padding: 0 20px;*/
+        /*box-sizing: border-box;*/
+    /*}*/
+    /*header nav.infopages .infopages-trigger*/
+    /*{*/
+        /*display: block !important;*/
+        /*margin-top: 3px;*/
+        /*margin-bottom: 3px;*/
+        /*cursor: pointer;*/
+    /*}*/
+    /*header nav.infopages .infopages-trigger img*/
+    /*{*/
+        /*display: block;*/
+    /*}*/
+    /*header nav.infopages ul*/
+    /*{*/
+        /*position: fixed;*/
+        /*z-index: 5;*/
+        /*top: 36px;*/
+        /*left: 0;*/
+        /*bottom: 0;*/
+
+        /*background: #343232;*/
+        /*width: 0;*/
+        /*box-sizing: border-box;*/
+        /*overflow: hidden;*/
+        /*padding: 0;*/
+
+        /*-webkit-transition: all .2s linear;*/
+        /*transition: all .2s linear;*/
+    /*}*/
+    /*header nav.infopages ul.active*/
+    /*{*/
+        /*width: 320px;*/
+    /*}*/
+    /*header nav.infopages ul li*/
+    /*{*/
+        /*float: none;*/
+        /*padding: 0 20px !important;*/
+    /*}*/
+    /*header nav.infopages ul li.current_user*/
+    /*{*/
+        /*padding-left: 0;*/
+    /*}*/
+
+    /*header #logo*/
+    /*{*/
+        /*padding: 10px 20px 0;*/
+    /*}*/
+
+    /*#top_back2,*/
+    /*header #phones,*/
+    /*header #phones ul,*/
+    /*header #mobile*/
+    /*{*/
+        /*background: none;*/
+    /*}*/
+    /*header #phones,*/
+    /*header #mobile*/
+    /*{*/
+        /*height: 50px;*/
+        /*overflow: hidden;*/
+    /*}*/
+
+    /*header #phones*/
+    /*{*/
+        /*float: left;*/
+        /*background: #009841;*/
+        /*padding-left: 20px;*/
+        /*box-sizing: border-box;*/
+        /*width: 50%;*/
+    /*}*/
+    /*header #phones ul*/
+    /*{*/
+        /*margin: 0;*/
+    /*}*/
+    /*header #phones ul li*/
+    /*{*/
+        /*float: none;*/
+        /*width: 100%;*/
+        /*height: auto;*/
+        /*padding: 10px 0;*/
+    /*}*/
+    /*header #phones ul li span.city*/
+    /*{*/
+        /*margin-top: 0;*/
+    /*}*/
+
+    /*header #mobile*/
+    /*{*/
+        /*position: static;*/
+        /*width: 50%;*/
+        /*float: right;*/
+        /*padding-right: 20px;*/
+        /*box-sizing: border-box;*/
+        /*background: #009841;*/
+    /*}*/
+    /*header #mobile .head*/
+    /*{*/
+        /*display: none;*/
+    /*}*/
+    /*header #mobile div*/
+    /*{*/
+        /*height: auto;*/
+        /*background: transparent;*/
+        /*margin: 0;*/
+        /*overflow: hidden;*/
+    /*}*/
+    /*header #mobile div ul*/
+    /*{*/
+        /*float: right;*/
+        /*margin-top: 8px;*/
+    /*}*/
+    /*header #mobile div .phone*/
+    /*{*/
+        /*clear: both;*/
+        /*text-align: right;*/
+        /*margin: 0;*/
+        /*padding: 5px 0 2px;*/
+    /*}*/
+
+    /*header #searchform*/
+    /*{*/
+        /*box-shadow: none !important;*/
+        /*margin: 0;*/
+
+        /*position: absolute;*/
+        /*top: 3px;*/
+        /*right: 140px;*/
+        /*width: 200px;*/
+    /*}*/
+    /*header #searchform .wrapper input*/
+    /*{*/
+        /*outline: none;*/
+    /*}*/
+
+    /*header #cart*/
+    /*{*/
+        /*top: 6px;*/
+        /*height: 24px;*/
+        /*width: 105px;*/
+        /*right: 20px;*/
+    /*}*/
+    /*header #cart a#cart_link*/
+    /*{*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*height: 24px;*/
+        /*background: transparent url(img/cart-1512512252.png) left top no-repeat;*/
+        /*background-size: auto 24px;*/
+        /*border: none;*/
+    /*}*/
+    /*header #cart #cart_link .cart*/
+    /*{*/
+        /*display: none;*/
+    /*}*/
+    /*header #cart a#cart_link span*/
+    /*{*/
+        /*margin-left: 60px;*/
+        /*color: #ffffff;*/
+    /*}*/
+/*}*/
+
+.dl-menuwrapper
+{
+    display: none !important;
+
+    position: relative;
+    top: -30px;
+
+    z-index: 8;
+}
+.dl-menuwrapper a
+{
+    text-decoration: none;
+}
+
+.dl-menuwrapper .dl-trigger
+{
+    font-size: 0;
+    color: transparent;
+
+    padding: 0;
+
+    width: 36px;
+    height: 30px;
+
+    background-size: auto 100%;
+}
+.dl-menuwrapper .dl-trigger, .dl-menuwrapper .dl-trigger:hover, .dl-menuwrapper .dl-menuwrapper .dl-trigger.dl-active
+{
+    background: #009846 url(img/phones_bg2-1512512252.png) repeat-x center !important;
+}
+.dl-menuwrapper ul
+{
+    background: #009846;
+}
+.dl-menuwrapper .dl-trigger:before
+{
+    content: '';
+    display: block;
+    position: relative;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icons/hamburger.png") no-repeat center;
+}
+.dl-menuwrapper .dl-trigger:after
+{
+    display: none;
+}
+
+
+@media only screen and (max-width:1080px)
+{
+    #container
+    {
+        margin-bottom: 0;
+    }
+    .pagewidth
+    {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 1px;
+        max-width: none;
+    }
+
+    header nav.infopages
+    {
+        width: 70px;
+        /*padding: 0 20px;*/
+        box-sizing: border-box;
+    }
+    header nav.infopages .infopages-trigger
+    {
+        display: block !important;
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        cursor: pointer;
+    }
+    header nav.infopages .infopages-trigger img
+    {
+        display: block;
+    }
+    header nav.infopages ul
+    {
+        position: fixed;
+        z-index: 12;
+        top: 35px;
+        left: 0;
+        bottom: 0;
+
+        background: #343232;
+        width: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0;
+
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+    header nav.infopages ul.active
+    {
+        width: 250px;
+    }
+    header nav.infopages ul li
+    {
+        float: none;
+        padding: 0 20px !important;
+    }
+    header nav.infopages ul li.current_user
+    {
+        padding-left: 0;
+    }
+
+    header #phones .phone-icon
+    {
+        position: absolute;
+    }
+
+    header #mobile
+    {
+        background: transparent url(img/mobile_bg-1512512252.png) 0 35px no-repeat;
+    }
+    header #mobile .head
+    {
+        text-align: right;
+    }
+    header #mobile div
+    {
+        float: right;
+    }
+    header #mobile div p
+    {
+        text-align: right;
+    }
+
+    #top_back2
+    {
+        top: 35px;
+        height: 60px;
+    }
+
+    header nav#categories
+    {
+        font-size: 12px;
+    }
+
+    #top_banner_carousel
+    {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #top_banner_carousel ul li
+    {
+        width: calc(100vw - 40px);
+        height: auto;
+    }
+    #top_banner_carousel ul li img
+    {
+        display: block;
+        width: calc(100vw - 40px);
+        height: auto;
+    }
+
+    #footer_margin
+    {
+        display: none;
+    }
+    footer
+    {
+        height: auto;
+        padding: 20px 0;
+    }
+    footer #main_contacts,
+    footer nav.infopages
+    {
+        position: static;
+        height: auto;
+    }
+
+    footer .pagewidth
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .pagewidth .infopages
+    {
+        margin-left: 0;
+    }
+    footer #main_contacts p.phone
+    {
+        margin-top: 0;
+    }
+
+    footer .pagewidth .infopages ul li
+    {
+        text-align: right;
+    }
+}
+@media only screen and (max-width:991px)
+{
+    .dl-menuwrapper
+    {
+        display: block !important;
+    }
+    header #categories
+    {
+        display: none !important;
+    }
+
+    header #logo
+    {
+        top: 50px;
+        left: 0;
+    }
+    header #logo a
+    {
+        background-size: contain;
+
+        width: 120px;
+        height: 42px;
+    }
+
+    header #phones .phones-inner .phone-icon
+    {
+        position: absolute;
+        z-index: 11;
+        display: block !important;
+
+        margin-left: 5px;
+        margin-top: 14px;
+        height: 30px;
+        cursor: pointer;
+    }
+    header #phones .phones-inner
+    {
+        margin-left: 260px;
+        margin-right: 240px;
+
+        background: #009846 url(img/phones_bg2-1512512252.png) repeat-x left top;
+        background-size: auto 100%;
+
+        position: relative;
+        height: 59px;
+    }
+    header #phones .phones-inner ul
+    {
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+
+        margin: 0;
+        padding-top: 64px;
+        background: transparent;
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+    header #phones .phones-inner ul.opened
+    {
+        height: 120px;
+    }
+    header #phones ul li
+    {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        background: #009846;
+    }
+
+    header #phones ul li span.city
+    {
+        margin-top: 0;
+    }
+
+    header #mobile div.head + div
+    {
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    header #mobile div p
+    {
+        margin-top: 5px;
+    }
+
+    header #searchform
+    {
+        margin-top: 10px;
+        margin-right: 190px;
+        box-shadow: none;
+
+        position: relative;
+        z-index: 9;
+    }
+    header #searchform input
+    {
+        outline: none;
+    }
+
+    header #cart
+    {
+        width: 180px;
+        height: 50px;
+    }
+    header #cart a#cart_link
+    {
+        height: 48px;
+        background: transparent url(img/cart-1512512252.png) 20px 5px no-repeat;
+    }
+    header #cart a#cart_link .cart
+    {
+        padding-top: 10px;
+    }
+
+
+    #top_banner_carousel a.button
+    {
+        top: calc(50% - 28px);
+
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (max-width:639px)
+{
+    header #cart
+    {
+        z-index: 9;
+    }
+    header #mobile
+    {
+        width: 198px;
+        z-index: 10;
+    }
+    header #mobile .head,
+    header #mobile div
+    {
+        margin-left: 0;
+    }
+
+    header #phones
+    {
+        background: transparent url(img/phones_bg-1512512252.png) -60px 0 no-repeat;
+    }
+    header #phones .phones-inner
+    {
+        margin-right: 150px;
+        margin-left: 200px;
+    }
+
+    header #logo
+    {
+        top: 52px;
+    }
+    header #searchform
+    {
+        margin-left: 200px;
+        margin-right: 50px;
+    }
+
+    header #cart
+    {
+        width: 30px;
+    }
+
+    header #cart a#cart_link
+    {
+        background: none;
+    }
+
+    header #cart a#cart_link .cart,
+    header #cart a#cart_link .cart + span
+    {
+        display: none;
+    }
+
+    header #cart a#cart_link span.cart-mobile
+    {
+        margin: 8px 0 0;
+
+        display: block !important;
+        width: 30px;
+        height: 30px;
+        background: url('../img/icons/cart.png') no-repeat left center;
+        background-size: 30px auto;
+
+        position: relative;
+    }
+    header #cart a#cart_link span.cart-mobile span
+    {
+        margin: 0;
+
+        display: block;
+        background: #ffffff;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        line-height: 12px;
+
+        text-align: center;
+        font-size: 10px;
+
+        position: absolute;
+        top: 0;
+        right: -5px;
+    }
+
+    #top_banner_carousel a.prev,
+    #top_banner_carousel a.next
+    {
+        height: 110px;
+        width: 22px;
+        background-size: auto 100%;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    header #phones
+    {
+        background: none;
+    }
+    header #phones .phones-inner
+    {
+        background: transparent;
+
+        margin-left: 108px;
+    }
+    header #phones .phones-inner .phone-icon svg g
+    {
+        fill: #009846 !important;
+    }
+
+    #top_back2
+    {
+        left: calc(100% - 168px);
+        height: 59px;
+    }
+
+    header #logo
+    {
+        top: 45px;
+    }
+    header #logo a
+    {
+        width: 100px;
+    }
+    header #mobile
+    {
+        width: 195px;
+    }
+    header #mobile div
+    {
+        height: 58px;
+    }
+    header #searchform
+    {
+        margin-left: 50px;
+    }
+}
