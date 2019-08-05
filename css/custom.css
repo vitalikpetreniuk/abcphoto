@@ -212,6 +212,13 @@
     /*}*/
 /*}*/
 
+/* Код выпадающего окна корзины. Можна удалить */
+#cart_contents
+{
+    display: block !important;
+}
+/* Конец кода. */
+
 .dl-menuwrapper
 {
     display: none !important;
@@ -254,7 +261,7 @@
     left: 3px;
     width: 30px;
     height: 30px;
-    background: url("../img/icons/hamburger.png") no-repeat center;
+    background: url("img/icons/hamburger.png") no-repeat center;
 }
 .dl-menuwrapper .dl-trigger:after
 {
@@ -264,6 +271,10 @@
 
 @media only screen and (max-width:1080px)
 {
+    #social_popup
+    {
+        display: none !important;
+    }
     #container
     {
         margin-bottom: 0;
@@ -276,6 +287,10 @@
         max-width: none;
     }
 
+    header
+    {
+        padding-bottom: 10px;
+    }
     header nav.infopages
     {
         width: 70px;
@@ -347,6 +362,11 @@
         text-align: right;
     }
 
+    header #cart a#cart_link
+    {
+        border: none !important;
+    }
+
     #top_back2
     {
         top: 35px;
@@ -410,6 +430,46 @@
     {
         text-align: right;
     }
+
+    #mobile
+    {
+        display: none;
+    }
+    header #phones ul
+    {
+        margin-right: 0;
+    }
+    #top_back2
+    {
+        background: #009846 url(img/phones_bg2-1512512252.png);
+        top: 36px;
+        height: 59px;
+    }
+
+    .dl-menuwrapper
+    {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        z-index: 101;
+    }
+    .dl-menuwrapper .dl-trigger
+    {
+        float: right;
+    }
+    .dl-menuwrapper .dl-menu
+    {
+        margin-top: 50px;
+        z-index: 20;
+    }
+    .dl-menuwrapper li.dl-back:after, .dl-menuwrapper li > a:not(:only-child):after
+    {
+        top: 50%;
+
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
 }
 @media only screen and (max-width:991px)
 {
@@ -438,7 +498,7 @@
     header #phones .phones-inner .phone-icon
     {
         position: absolute;
-        z-index: 11;
+        z-index: 102;
         display: block !important;
 
         margin-left: 5px;
@@ -471,7 +531,7 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: 10;
+        z-index: 101;
 
         -webkit-transition: all .2s linear;
         transition: all .2s linear;
@@ -542,6 +602,19 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
+
+    #cart_contents
+    {
+        position: absolute;
+        width: 240px;
+        top: 50px;
+        right: 0;
+    }
+    header #cart a#cart_link:hover, header #cart a#cart_link.opened
+    {
+        background: transparent;
+        border: none !important;
+    }
 }
 @media only screen and (max-width:639px)
 {
@@ -603,7 +676,7 @@
         display: block !important;
         width: 30px;
         height: 30px;
-        background: url('../img/icons/cart.png') no-repeat left center;
+        background: url('img/icons/cart.png') no-repeat left center;
         background-size: 30px auto;
 
         position: relative;
@@ -678,4 +751,31 @@
     {
         margin-left: 50px;
     }
+
+    #top_back2
+    {
+        display: none;
+    }
+
+    header #phones .phones-inner
+    {
+        margin-right: 46px;
+    }
+    header #phones .phones-inner .phone-icon
+    {
+        right: 0;
+    }
+    header #phones .phones-inner ul
+    {
+        left: auto;
+    }
+    header #searchform
+    {
+        margin-left: 0;
+    }
+    header nav.infopages ul
+    {
+        z-index: 103;
+    }
+
 }
