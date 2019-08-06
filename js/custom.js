@@ -10,4 +10,9 @@ $(function(){
     $( '#dl-menu' ).dlmenu({
         animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
     });
+
+    if($('.credit-banks-info div.ukrsibbank').length)
+    {
+        $('div.ukrsibbank').find('table').wrap('<div class="usb-table"></div>');
+    }
 });

@@ -1,217 +1,3 @@
-/*@media only screen and (max-width:1080px)*/
-/*{*/
-    /*#container {*/
-        /*padding: 0;*/
-    /*}*/
-
-    /*header*/
-    /*{*/
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-
-    /*}*/
-    /*header #logo*/
-    /*{*/
-        /*position: static;*/
-    /*}*/
-    /*header nav.infopages*/
-    /*{*/
-        /*order: 1;*/
-    /*}*/
-    /*header #searchform*/
-    /*{*/
-        /*order: 2;*/
-    /*}*/
-    /*header #cart*/
-    /*{*/
-        /*order: 3;*/
-    /*}*/
-    /*header #phones*/
-    /*{*/
-        /*order: 4;*/
-    /*}*/
-    /*header #mobile*/
-    /*{*/
-        /*order: 5;*/
-    /*}*/
-    /*header #logo*/
-    /*{*/
-        /*order: 6;*/
-    /*}*/
-    /*header #categories*/
-    /*{*/
-        /*order: 7;*/
-    /*}*/
-
-
-
-
-    /*header nav.infopages*/
-    /*{*/
-        /*width: 70px;*/
-        /*padding: 0 20px;*/
-        /*box-sizing: border-box;*/
-    /*}*/
-    /*header nav.infopages .infopages-trigger*/
-    /*{*/
-        /*display: block !important;*/
-        /*margin-top: 3px;*/
-        /*margin-bottom: 3px;*/
-        /*cursor: pointer;*/
-    /*}*/
-    /*header nav.infopages .infopages-trigger img*/
-    /*{*/
-        /*display: block;*/
-    /*}*/
-    /*header nav.infopages ul*/
-    /*{*/
-        /*position: fixed;*/
-        /*z-index: 5;*/
-        /*top: 36px;*/
-        /*left: 0;*/
-        /*bottom: 0;*/
-
-        /*background: #343232;*/
-        /*width: 0;*/
-        /*box-sizing: border-box;*/
-        /*overflow: hidden;*/
-        /*padding: 0;*/
-
-        /*-webkit-transition: all .2s linear;*/
-        /*transition: all .2s linear;*/
-    /*}*/
-    /*header nav.infopages ul.active*/
-    /*{*/
-        /*width: 320px;*/
-    /*}*/
-    /*header nav.infopages ul li*/
-    /*{*/
-        /*float: none;*/
-        /*padding: 0 20px !important;*/
-    /*}*/
-    /*header nav.infopages ul li.current_user*/
-    /*{*/
-        /*padding-left: 0;*/
-    /*}*/
-
-    /*header #logo*/
-    /*{*/
-        /*padding: 10px 20px 0;*/
-    /*}*/
-
-    /*#top_back2,*/
-    /*header #phones,*/
-    /*header #phones ul,*/
-    /*header #mobile*/
-    /*{*/
-        /*background: none;*/
-    /*}*/
-    /*header #phones,*/
-    /*header #mobile*/
-    /*{*/
-        /*height: 50px;*/
-        /*overflow: hidden;*/
-    /*}*/
-
-    /*header #phones*/
-    /*{*/
-        /*float: left;*/
-        /*background: #009841;*/
-        /*padding-left: 20px;*/
-        /*box-sizing: border-box;*/
-        /*width: 50%;*/
-    /*}*/
-    /*header #phones ul*/
-    /*{*/
-        /*margin: 0;*/
-    /*}*/
-    /*header #phones ul li*/
-    /*{*/
-        /*float: none;*/
-        /*width: 100%;*/
-        /*height: auto;*/
-        /*padding: 10px 0;*/
-    /*}*/
-    /*header #phones ul li span.city*/
-    /*{*/
-        /*margin-top: 0;*/
-    /*}*/
-
-    /*header #mobile*/
-    /*{*/
-        /*position: static;*/
-        /*width: 50%;*/
-        /*float: right;*/
-        /*padding-right: 20px;*/
-        /*box-sizing: border-box;*/
-        /*background: #009841;*/
-    /*}*/
-    /*header #mobile .head*/
-    /*{*/
-        /*display: none;*/
-    /*}*/
-    /*header #mobile div*/
-    /*{*/
-        /*height: auto;*/
-        /*background: transparent;*/
-        /*margin: 0;*/
-        /*overflow: hidden;*/
-    /*}*/
-    /*header #mobile div ul*/
-    /*{*/
-        /*float: right;*/
-        /*margin-top: 8px;*/
-    /*}*/
-    /*header #mobile div .phone*/
-    /*{*/
-        /*clear: both;*/
-        /*text-align: right;*/
-        /*margin: 0;*/
-        /*padding: 5px 0 2px;*/
-    /*}*/
-
-    /*header #searchform*/
-    /*{*/
-        /*box-shadow: none !important;*/
-        /*margin: 0;*/
-
-        /*position: absolute;*/
-        /*top: 3px;*/
-        /*right: 140px;*/
-        /*width: 200px;*/
-    /*}*/
-    /*header #searchform .wrapper input*/
-    /*{*/
-        /*outline: none;*/
-    /*}*/
-
-    /*header #cart*/
-    /*{*/
-        /*top: 6px;*/
-        /*height: 24px;*/
-        /*width: 105px;*/
-        /*right: 20px;*/
-    /*}*/
-    /*header #cart a#cart_link*/
-    /*{*/
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*height: 24px;*/
-        /*background: transparent url(img/cart-1512512252.png) left top no-repeat;*/
-        /*background-size: auto 24px;*/
-        /*border: none;*/
-    /*}*/
-    /*header #cart #cart_link .cart*/
-    /*{*/
-        /*display: none;*/
-    /*}*/
-    /*header #cart a#cart_link span*/
-    /*{*/
-        /*margin-left: 60px;*/
-        /*color: #ffffff;*/
-    /*}*/
-/*}*/
-
 /* Код выпадающего окна корзины. Можна удалить */
 #cart_contents
 {
@@ -285,6 +71,10 @@
         width: 100%;
         min-width: 1px;
         max-width: none;
+    }
+    .ware_page
+    {
+        width: 100%;
     }
 
     header
@@ -470,9 +260,18 @@
         transform: translateY(-50%);
     }
 
+    .ukrsibbank .usb-table
+    {
+        width: 100%;
+        overflow-x: scroll;
+    }
 }
 @media only screen and (max-width:991px)
 {
+    #container
+    {
+        min-height: auto;
+    }
     .dl-menuwrapper
     {
         display: block !important;
@@ -614,6 +413,17 @@
     {
         background: transparent;
         border: none !important;
+    }
+}
+@media only screen and (max-width:767px)
+{
+    .delivery-payment-info .delivery,
+    .delivery-payment-info .payment
+    {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media only screen and (max-width:639px)
