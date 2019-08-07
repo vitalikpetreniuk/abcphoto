@@ -57,6 +57,10 @@
 
 @media only screen and (max-width:1080px)
 {
+    #logo
+    {
+        z-index: 102;
+    }
     #social_popup
     {
         display: none !important;
@@ -265,6 +269,22 @@
         width: 100%;
         overflow-x: scroll;
     }
+
+    .index_ware_block
+    {
+        margin-right: -2px;
+    }
+    .index_ware_block ul li
+    {
+        display: block;
+        float: left;
+        width: calc(50% - 12px);
+    }
+    .index_ware_block ul li a,
+    .index_ware_block ul li div.buttons
+    {
+        width: 100%;
+    }
 }
 @media only screen and (max-width:991px)
 {
@@ -444,6 +464,15 @@
     {
         margin-top: 20px;
     }
+
+    .content-with-sidebar .sidebar,
+    .content-with-sidebar .content
+    {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media only screen and (max-width:639px)
 {
@@ -605,6 +634,12 @@
     header nav.infopages ul
     {
         z-index: 103;
+    }
+
+    .index_ware_block ul li
+    {
+        width: 100%;
+        float: none;
     }
 
 }
