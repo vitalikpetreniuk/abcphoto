@@ -285,6 +285,9 @@
     {
         width: 100%;
     }
+
+
+
 }
 @media only screen and (max-width:991px)
 {
@@ -465,6 +468,12 @@
     {
         margin-bottom: 0;
     }
+
+
+    div.purchasing_by_phone input
+    {
+        width: 200px;
+    }
 }
 @media only screen and (max-width:767px)
 {
@@ -497,6 +506,36 @@
         display: block;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    div.purchasing_by_phone form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.purchasing_by_phone label
+    {
+        margin-right: 20px;
+    }
+
+    div.purchasing_by_phone label
+    {
+        margin-top: 10px;
+    }
+    div.purchasing_by_phone label,
+    div.purchasing_by_phone input,
+    button.order
+    {
+        display: block;
+        box-sizing: border-box;
+    }
+    div.purchasing_by_phone input#contact_phone,
+    div.purchasing_by_phone input#contact_name,
+    button.order
+    {
+        margin-left: 0;
+        width: 160px;
     }
 }
 @media only screen and (max-width:639px)
@@ -621,6 +660,69 @@
     {
         padding: 10px 0;
     }
+
+
+
+
+    /* CHECKOUT & CART ---------------------------------------------- */
+
+    table.cart-totals
+    {
+        width: 100%;
+    }
+    div.purchasing form div.container div.private,
+    div.purchasing form div.container div.delivery,
+    div.purchasing form div.container div.payment
+    {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    table.cart-list thead th
+    {
+        font-size: 9px;
+    }
+    table.cart-list tbody tr td
+    {
+        padding: 20px 10px;
+    }
+
+    table.cart-list tbody tr td.image img
+    {
+        display: block;
+        width: 40px;
+    }
+    table.cart-list tbody tr td.title
+    {
+        width: 100px;
+        font-size: 11px;
+    }
+    table.cart-list tbody tr td.title .ware_code
+    {
+        font-size: 11px;
+    }
+    table.cart-list tbody tr td.qty,
+    table.cart-list tbody tr td input,
+    table.cart-list tbody tr td.price,
+    table.cart-list tbody tr td.sum
+    {
+        font-size: 12px;
+    }
+    table.cart-list tbody tr td.actions a.delete
+    {
+        width: 12px;
+        height: 12px;
+        background-size: contain;
+    }
+
+
+    .purchasing_by_phone button.order
+    {
+        background-size: 100% auto;
+        width: 240px;
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width:500px)
 {
@@ -698,4 +800,48 @@
         float: none;
     }
 
+
+
+    /* CHECKOUT & CART ---------------------------------------------- */
+
+    table.cart-list thead th.price,
+    table.cart-list tbody tr td.price
+    {
+        display: none;
+    }
+    table.cart-list tbody tr td.title
+    {
+        width: 80px;
+    }
+
+    table.cart-list tbody tr td.sum
+    {
+        background: #f9f9f9;
+    }
+    table.cart-list tbody tr td.actions
+    {
+        background: #ffffff;
+    }
+
+    nav.purchasing ul li a
+    {
+        font-size: 11px;
+    }
+
+    div.purchasing_by_phone label
+    {
+        position: relative;
+        left: -20px;
+    }
+    div.purchasing_by_phone input#contact_phone
+    {
+        position: relative;
+        left: -17px;
+        margin-bottom: 20px;
+    }
+    div.purchasing_by_phone input#contact_phone, div.purchasing_by_phone input#contact_name, button.order
+    {
+        width: 240px;
+        margin-right: 0;
+    }
 }
