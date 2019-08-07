@@ -440,6 +440,31 @@
         width: 100%;
         box-sizing: border-box;
     }
+
+    .ware_page .main_info .image,
+    .ware_page .main_info .info
+    {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .ware_page .main_info .image .main_image
+    {
+        width: 100%;
+        display: block;
+    }
+    .ware_page .main_info .info
+    {
+        margin-top: 20px;
+    }
+    .ware_page .main_info .info .price_block .options_block
+    {
+        vertical-align: middle;
+    }
+    .ware_page .main_info .info .price_block .options_block .wrapper button.credit
+    {
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width:767px)
 {
@@ -564,6 +589,37 @@
         height: 110px;
         width: 22px;
         background-size: auto 100%;
+    }
+
+    .ware_page .main_info .image .main_image
+    {
+        height: auto;
+    }
+    .ware_page .main_info .image .main_image img
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .ware_page .main_info .info .price_block .main_price_block,
+    .ware_page .main_info .info .price_block .options_block
+    {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ware_page .main_info .info .price_block .main_price_block
+    {
+        padding-top: 10px;
+    }
+    .ware_page .main_info .info .price_block .main_price_block p.remains
+    {
+        margin-top: 0;
+    }
+    .ware_page .main_info .info .price_block .options_block
+    {
+        padding: 10px 0;
     }
 }
 @media only screen and (max-width:500px)
