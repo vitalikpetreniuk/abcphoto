@@ -29,4 +29,15 @@ $(function(){
             facets.slideToggle();
         });
     }
+
+    var accessories_filter = $('#accessories_filter');
+
+    if(accessories_filter.length && $(window).width()<640)
+    {
+        $('.accessories_filter_button').on('click', function () {
+            accessories_filter.find('ul').slideToggle();
+        });
+    }
+
+
 });

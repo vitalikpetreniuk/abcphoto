@@ -53,7 +53,8 @@
 {
     display: none;
 }
-.facets-button
+.facets-button,
+.accessories_filter_button
 {
     display: none;
 }
@@ -764,6 +765,46 @@
     #error
     {
         width: 100%;
+    }
+
+    #accessories #accessories_filter,
+    #accessories #accessory_list
+    {
+        display: block;
+        width: 100%;
+    }
+    #accessories #accessories_filter
+    {
+        text-align: center;
+    }
+    #accessories #accessories_filter ul
+    {
+        display: none;
+    }
+    #accessories #accessories_filter ul li
+    {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .accessories_filter_button
+    {
+        display: block;
+        border: 0;
+        background: transparent url(img/buy_bg-1512512252.png) 0 0 no-repeat;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        /*margin-bottom: 20px;*/
+        margin: 0 auto 20px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: rgba(50, 50, 50, 0.5) 2px 1px 2px;
+
+        cursor: pointer;
     }
 }
 @media only screen and (max-width:500px)
