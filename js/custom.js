@@ -24,10 +24,9 @@ $(function(){
             $(this).next('div.filter_box').toggle('slow');
             $(this).find('a').toggleClass('closed');
         });
-
-        $('.facets-button').on('click', function () {
-            facets.slideToggle();
-        });
+        setTimeout(function(){
+            facets.show();
+        }, 1000);
     }
 
     var accessories_filter = $('#accessories_filter');

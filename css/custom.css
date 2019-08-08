@@ -53,7 +53,6 @@
 {
     display: none;
 }
-.facets-button,
 .accessories_filter_button
 {
     display: none;
@@ -543,24 +542,6 @@
         width: 160px;
     }
 
-    .facets-button
-    {
-        display: block;border: 0;
-        background: transparent url(img/buy_bg-1512512252.png) 0 0 no-repeat;
-        width: 90px;
-        height: 30px;
-        line-height: 30px;
-        margin-bottom: 20px;
-        text-align: center;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 12px;
-        text-shadow: rgba(50, 50, 50, 0.5) 2px 1px 2px;
-
-        cursor: pointer;
-    }
-
     #facets
     {
         margin-bottom: 20px;
@@ -927,4 +908,19 @@
         width: 240px;
         margin-right: 0;
     }
+
+    .ware_info nav ul li a{
+        font-size: 11px;
+    }
+
+     .ware_info .ware_info_tab table.b-properties tr td
+    {
+        padding: 5px 10px;
+    }
+
+     #content_spec .rtf
+     {
+         font-size: 10px;
+         line-height: 12px;
+     }
 }
