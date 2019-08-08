@@ -1,7 +1,7 @@
 /* Код выпадающего окна корзины. Можна удалить */
 #cart_contents
 {
-    display: block !important;
+    /*display: block !important;*/
 }
 /* Конец кода. */
 
@@ -50,6 +50,10 @@
     background: url("img/icons/hamburger.png") no-repeat center;
 }
 .dl-menuwrapper .dl-trigger:after
+{
+    display: none;
+}
+.facets-button
 {
     display: none;
 }
@@ -185,7 +189,7 @@
     }
     #top_banner_carousel ul li img
     {
-        display: block;
+        display: block !important;
         width: calc(100vw - 40px);
         height: auto;
     }
@@ -270,18 +274,18 @@
         overflow-x: scroll;
     }
 
-    .index_ware_block
+    .content-with-sidebar .index_ware_block
     {
         margin-right: -2px;
     }
-    .index_ware_block ul li
+    .content-with-sidebar .index_ware_block ul li
     {
         display: block;
         float: left;
         width: calc(50% - 12px);
     }
-    .index_ware_block ul li a,
-    .index_ware_block ul li div.buttons
+    .content-with-sidebar .index_ware_block ul li a,
+    .content-with-sidebar .index_ware_block ul li div.buttons
     {
         width: 100%;
     }
@@ -293,7 +297,7 @@
 {
     #container
     {
-        min-height: auto;
+        min-height: calc(100% - 206px);
     }
     .dl-menuwrapper
     {
@@ -537,6 +541,38 @@
         margin-left: 0;
         width: 160px;
     }
+
+    .facets-button
+    {
+        display: block;border: 0;
+        background: transparent url(img/buy_bg-1512512252.png) 0 0 no-repeat;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: rgba(50, 50, 50, 0.5) 2px 1px 2px;
+
+        cursor: pointer;
+    }
+
+    #facets
+    {
+        margin-bottom: 20px;
+        display: none;
+    }
+    .sidebar h6
+    {
+        background-repeat: repeat-x !important;
+    }
+    .sidebar h6:nth-child(1)
+    {
+        background: none;
+    }
 }
 @media only screen and (max-width:639px)
 {
@@ -723,6 +759,12 @@
         width: 240px;
         margin-top: 20px;
     }
+
+
+    #error
+    {
+        width: 100%;
+    }
 }
 @media only screen and (max-width:500px)
 {
@@ -794,7 +836,7 @@
         z-index: 103;
     }
 
-    .index_ware_block ul li
+    .content-with-sidebar .index_ware_block ul li
     {
         width: 100%;
         float: none;
