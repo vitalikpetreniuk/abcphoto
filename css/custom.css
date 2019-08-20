@@ -291,7 +291,25 @@
     }
 
 
-
+    .kit .contents
+    {
+        width: 60%;
+    }
+    .kit .contents div
+    {
+        width: 100%;
+    }
+    .kit .sum
+    {
+        width: 40%;
+        float: none;
+    }
+    .kit .sum .sums
+    {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
 }
 @media only screen and (max-width:991px)
 {
@@ -478,6 +496,37 @@
     {
         width: 200px;
     }
+    .kit .contents
+    {
+        width: calc(100% - 200px);
+    }
+    .kit .sum
+    {
+        width: 200px;
+    }
+    .kit .sum .sums
+    {
+        text-align: center;
+    }
+    .kit .sum .sums .total,
+    .kit .sum .sums .economy
+    {
+        display: block;
+        width: 100%;
+    }
+    .kit .sum .sums h5
+    {
+        margin-bottom: 5px;
+    }
+    .kit .sum .sums p.price
+    {
+        margin-bottom: 10px;
+    }
+    .kit .sum .sums .economy
+    {
+        padding-left: 0;
+    }
+
 }
 @media only screen and (max-width:767px)
 {
@@ -554,6 +603,49 @@
     .sidebar h6:nth-child(1)
     {
         background: none;
+    }
+
+
+    .kit
+    {
+        display: block;
+    }
+    .kit .contents
+    {
+        width: 100%;
+        display: block;
+        padding-bottom: 10px;
+    }
+    .kit .sum
+    {
+        float: none;
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .kit .contents a.next,
+    .kit .contents a.prev
+    {
+        border: none;
+    }
+    .kit .contents a.next
+    {
+        right: 0;
+    }
+
+    .ware_info .ware_info_tab table tr
+    {
+        font-size: 10px;
+    }
+    .ware_info .ware_info_tab table tr th
+    {
+        padding: 0 10px;
+    }
+
+    .ware_info .ware_info_tab table tr.group th
+    {
+        font-size: 12px;
     }
 }
 @media only screen and (max-width:639px)
