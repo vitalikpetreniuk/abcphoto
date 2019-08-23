@@ -647,6 +647,21 @@
     {
         font-size: 12px;
     }
+
+
+    #content_info table
+    {
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
+
+    #content_info table tbody
+    {
+        display: block;
+        width: 100%;
+    }
 }
 @media only screen and (max-width:639px)
 {
