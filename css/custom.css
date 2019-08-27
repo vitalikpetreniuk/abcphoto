@@ -58,6 +58,11 @@
     display: none;
 }
 
+h1
+{
+    overflow: hidden;
+}
+
 
 @media only screen and (max-width:1080px)
 {
@@ -310,6 +315,16 @@
         display: block;
         box-sizing: border-box;
     }
+
+
+    header nav#categories
+    {
+        font-size: 11px;
+    }
+    header nav#categories ul li a
+    {
+        padding: 0 10px;
+    }
 }
 @media only screen and (max-width:991px)
 {
@@ -527,6 +542,9 @@
         padding-left: 0;
     }
 
+
+
+
 }
 @media only screen and (max-width:767px)
 {
@@ -656,68 +674,66 @@
         overflow-x: scroll;
         padding-bottom: 20px;
     }
-
     #content_info table tbody
     {
         display: block;
         width: 100%;
     }
-}
-@media only screen and (max-width:639px)
-{
-    header #cart
+
+
+    .ware_info .ware_info_tab table
     {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+}
+@media only screen and (max-width:639px) {
+    header #cart {
         z-index: 9;
     }
-    header #mobile
-    {
+
+    header #mobile {
         width: 198px;
         z-index: 10;
     }
+
     header #mobile .head,
-    header #mobile div
-    {
+    header #mobile div {
         margin-left: 0;
     }
 
-    header #phones
-    {
+    header #phones {
         background: transparent url(img/phones_bg-1512512252.png) -60px 0 no-repeat;
     }
-    header #phones .phones-inner
-    {
+
+    header #phones .phones-inner {
         margin-right: 150px;
         margin-left: 200px;
     }
 
-    header #logo
-    {
+    header #logo {
         top: 52px;
     }
-    header #searchform
-    {
+
+    header #searchform {
         margin-left: 200px;
         margin-right: 50px;
     }
 
-    header #cart
-    {
+    header #cart {
         width: 30px;
     }
 
-    header #cart a#cart_link
-    {
+    header #cart a#cart_link {
         background: none;
     }
 
     header #cart a#cart_link .cart,
-    header #cart a#cart_link .cart + span
-    {
+    header #cart a#cart_link .cart + span {
         display: none;
     }
 
-    header #cart a#cart_link span.cart-mobile
-    {
+    header #cart a#cart_link span.cart-mobile {
         margin: 8px 0 0;
 
         display: block !important;
@@ -728,8 +744,8 @@
 
         position: relative;
     }
-    header #cart a#cart_link span.cart-mobile span
-    {
+
+    header #cart a#cart_link span.cart-mobile span {
         margin: 0;
 
         display: block;
@@ -748,135 +764,119 @@
     }
 
     #top_banner_carousel a.prev,
-    #top_banner_carousel a.next
-    {
+    #top_banner_carousel a.next {
         height: 110px;
         width: 22px;
         background-size: auto 100%;
     }
 
-    .ware_page .main_info .image .main_image
-    {
+    .ware_page .main_info .image .main_image {
         height: auto;
     }
-    .ware_page .main_info .image .main_image img
-    {
+
+    .ware_page .main_info .image .main_image img {
         display: block;
         width: 100%;
     }
 
     .ware_page .main_info .info .price_block .main_price_block,
-    .ware_page .main_info .info .price_block .options_block
-    {
+    .ware_page .main_info .info .price_block .options_block {
         width: 100%;
         display: block;
         padding-left: 0;
         padding-right: 0;
     }
-    .ware_page .main_info .info .price_block .main_price_block
-    {
+
+    .ware_page .main_info .info .price_block .main_price_block {
         padding-top: 10px;
     }
-    .ware_page .main_info .info .price_block .main_price_block p.remains
-    {
+
+    .ware_page .main_info .info .price_block .main_price_block p.remains {
         margin-top: 0;
     }
-    .ware_page .main_info .info .price_block .options_block
-    {
+
+    .ware_page .main_info .info .price_block .options_block {
         padding: 10px 0;
     }
 
-
-
-
     /* CHECKOUT & CART ---------------------------------------------- */
-
-    table.cart-totals
-    {
+    table.cart-totals {
         width: 100%;
     }
+
     div.purchasing form div.container div.private,
     div.purchasing form div.container div.delivery,
-    div.purchasing form div.container div.payment
-    {
+    div.purchasing form div.container div.payment {
         display: block;
         box-sizing: border-box;
         width: 100%;
     }
 
-    table.cart-list thead th
-    {
+    table.cart-list thead th {
         font-size: 9px;
     }
-    table.cart-list tbody tr td
-    {
+
+    table.cart-list tbody tr td {
         padding: 20px 10px;
     }
 
-    table.cart-list tbody tr td.image img
-    {
+    table.cart-list tbody tr td.image img {
         display: block;
         width: 40px;
     }
-    table.cart-list tbody tr td.title
-    {
+
+    table.cart-list tbody tr td.title {
         width: 100px;
         font-size: 11px;
     }
-    table.cart-list tbody tr td.title .ware_code
-    {
+
+    table.cart-list tbody tr td.title .ware_code {
         font-size: 11px;
     }
+
     table.cart-list tbody tr td.qty,
     table.cart-list tbody tr td input,
     table.cart-list tbody tr td.price,
-    table.cart-list tbody tr td.sum
-    {
+    table.cart-list tbody tr td.sum {
         font-size: 12px;
     }
-    table.cart-list tbody tr td.actions a.delete
-    {
+
+    table.cart-list tbody tr td.actions a.delete {
         width: 12px;
         height: 12px;
         background-size: contain;
     }
 
-
-    .purchasing_by_phone button.order
-    {
+    .purchasing_by_phone button.order {
         background-size: 100% auto;
         width: 240px;
         margin-top: 20px;
     }
 
-
-    #error
-    {
+    #error {
         width: 100%;
     }
 
     #accessories #accessories_filter,
-    #accessories #accessory_list
-    {
+    #accessories #accessory_list {
         display: block;
         width: 100%;
     }
-    #accessories #accessories_filter
-    {
+
+    #accessories #accessories_filter {
         text-align: center;
     }
-    #accessories #accessories_filter ul
-    {
+
+    #accessories #accessories_filter ul {
         display: none;
     }
-    #accessories #accessories_filter ul li
-    {
+
+    #accessories #accessories_filter ul li {
         margin: 0;
         padding: 5px 0;
     }
 
-    .accessories_filter_button
-    {
+    .accessories_filter_button {
         display: block;
         border: 0;
         background: transparent url(img/buy_bg-1512512252.png) 0 0 no-repeat;
@@ -893,6 +893,30 @@
         text-shadow: rgba(50, 50, 50, 0.5) 2px 1px 2px;
 
         cursor: pointer;
+    }
+
+    .breadcrumb
+    {
+        font-size: 14px;
+    }
+    h5
+    {
+        font-size: 17px;
+    }
+    .ware_page .main_info .info .info_block .brief p, .ware_page .main_info .info .info_block .brief ul li
+    {
+        font-size: 14px;
+    }
+    .ware_info nav ul li a,
+    #content_info p,
+    #content_info ul
+    {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .infopages
+    {
+        font-size: 17px;
     }
 }
 @media only screen and (max-width:500px)
@@ -946,7 +970,7 @@
 
     header #phones .phones-inner
     {
-        margin-right: 46px;
+        margin-right: 60px;
     }
     header #phones .phones-inner .phone-icon
     {
